@@ -49,9 +49,9 @@ $db = $config->getConnection();
 			<li><a href="nilai.php">Nilai</a></li>
 			<li><a href="kriteria.php">Kriteria</a></li>
 			<li><a href="alternatif.php">Alternatif</a></li>
-			<li><a href="rangking.php">Rangking</a></li>
 			<li><a href="analisa-kriteria.php">Analisa Kriteria</a></li>
 			<li><a href="analisa-alternatif.php">Analisa Alternatif</a></li>
+			<li><a href="rangking.php">Rangking</a></li>
 			<li><a href="laporan-cetak.php">Laporan</a></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">

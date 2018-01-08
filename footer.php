@@ -1,4 +1,4 @@
-<footer class="text-center">&copy; 2015</footer>
+<footer class="text-center">&copy; Kelompok 1 Sistem Informasi ~ Tugas SPK AHP</footer>
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
