@@ -2,7 +2,7 @@
 class User{
 	
 	private $conn;
-	private $table_name = "pengguna";
+	private $table_name = "ahp_pengguna";
 	
 	public $id;
 	public $nl;
