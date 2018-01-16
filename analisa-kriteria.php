@@ -142,7 +142,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C3');
+								$stmt3 = $pro1->readSatu('C2');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -184,7 +184,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C4');
+								$stmt3 = $pro1->readSatu('C2');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -226,7 +226,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C5');
+								$stmt3 = $pro1->readSatu('C2');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -310,7 +310,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C4');
+								$stmt3 = $pro1->readSatu('C3');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -352,7 +352,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C5');
+								$stmt3 = $pro1->readSatu('C3');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -367,7 +367,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt2 = $pro1->readSatu('C3');
+								$stmt2 = $pro1->readSatu('C2');
 								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
@@ -394,7 +394,7 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C4');
+								$stmt3 = $pro1->readSatu('C3');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
@@ -436,11 +436,137 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C5');
+								$stmt3 = $pro1->readSatu('C4');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
 							<input type="hidden" name="C59" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C3');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C4');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C3');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C4');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C3');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C4');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
 							<?php
 								}
 							?>
@@ -478,7 +604,133 @@ window.onload=function(){
 					  <div class="col-xs-12 col-md-3">
 						<div class="form-group">
 							<?php
-								$stmt3 = $pro1->readSatu('C5');
+								$stmt3 = $pro1->readSatu('C1');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C4');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C1');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C4');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C1');
+								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C510" value="<?php echo $row3['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt2 = $pro1->readSatu('C4');
+								while($row1 = $stmt2->fetch(PDO::FETCH_ASSOC)){
+							?>
+							<input type="text" class="form-control" value="<?php echo $row1['nama_kriteria'] ?>" readonly />
+							<input type="hidden" name="C410" value="<?php echo $row1['id_kriteria'] ?>" />
+							<?php
+								}
+							?>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<select class="form-control" name="nl10">
+								<?php
+								$stmt1 = $pro2->readAll();
+								while ($row2 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+								?>
+								<option value="<?php echo $row2['jum_nilai'] ?>"><?php echo $row2['jum_nilai'] ?> - <?php echo $row2['ket_nilai'] ?></option>
+								<?php
+								}
+								?>
+							</select>
+						</div>
+					  </div>
+					  <div class="col-xs-12 col-md-3">
+						<div class="form-group">
+							<?php
+								$stmt3 = $pro1->readSatu('C1');
 								while($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)){
 							?>
 							<input type="text" class="form-control" value="<?php echo $row3['nama_kriteria'] ?>" readonly />

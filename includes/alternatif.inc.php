@@ -60,7 +60,7 @@ class Alternatif{
 		
 		$this->id = $row['id_alternatif'];
 		$this->nm = $row['nama_alternatif'];
-		$this->sa = $row['skor_alternatif'];
+		// $this->sa = $row['skor_alternatif'];
 		$this->hs = $row['hasil_akhir'];
 	}
 	

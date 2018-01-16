@@ -6,7 +6,7 @@ if($_POST){
 	$eks = new Alternatif($db);
 
 	// $eks->kt = $_POST['kt'];
-	$eks->id = $_POST['kd'];
+	$eks->id = $_POST['id'];
 	$eks->nm = $_POST['nm'];
 	
 	if($eks->insert()){
@@ -35,9 +35,13 @@ if($_POST){
 			</div>
 			
 			    <form method="post">
+			      <div class="form-group">
+				    <label for="kt">ID Alternative</label>
+				    <input type="text" class="form-control" id="id" name="id" required>
+				  </div>
 				  <div class="form-group">
 				    <label for="kt">Nama Alternatif</label>
-				    <input type="text" class="form-control" id="kt" name="kt" required>
+				    <input type="text" class="form-control" id="nm" name="nm" required>
 				  </div>
 				  <button type="submit" class="btn btn-primary">Simpan</button>
 				  <button type="button" onclick="location.href='alternatif.php'" class="btn btn-success">Kembali</button>

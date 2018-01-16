@@ -12,6 +12,7 @@ $eks->readOne();
 if($_POST){
 
 	$eks->nm = $_POST['nm'];
+	$esk->id = $_POST['id'];
 	
 	if($eks->update()){
 		echo "<script>location.href='alternatif.php'</script>";
@@ -30,8 +31,6 @@ if($_POST){
 		  	<div class="page-header">
 			  <h5>Ubah Alternatif</h5>
 			</div>
-			
-			    <form method="post">
 				  <div class="form-group">
 				    <label for="nm">Nama Alternatif</label>
 				    <input type="text" class="form-control" id="nm" name="nm" value="<?php echo $eks->nm; ?>">

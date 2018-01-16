@@ -63,12 +63,17 @@ if($_POST){
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-  
-    <div class="container">
+
+	 <div class="container">
+	 	<div class="row">
+	 		<h6>Kelompok 1 (SI Malam)</h6><br>
+	<p>Teguh,Ridwan,Chatur,Luqni,Nasir</p>
+
+
+	 	</div>
 		<div class="row">
 		  <div class="col-xs-12 col-sm-8 col-md-8">&nbsp;</div>
 		  <div class="col-xs-12 col-sm-4 col-md-4">
-		  	
 		  	<div style="margin-top: 100px;" class="panel panel-default"><div class="panel-body">
 		  		<div class="text-center"><h4>Member Area</h4></div>
 		  		<form method="post">
@@ -84,10 +89,12 @@ if($_POST){
 				  <button type="submit" class="btn btn-primary">Login</button>
 				</form>
 		  	</div></div>
-		  	
 		  </div>
 		</div>
 	</div>
+	
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.3.min.js"></script>
